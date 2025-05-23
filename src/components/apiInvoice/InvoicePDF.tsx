@@ -16,7 +16,7 @@ export const InvoicePDF: React.FC<InvoicePDFProps> = ({ invoice }) => {
       <Page size="A4" style={styles.page}>
         <View style={styles.header}>
           <View>
-            <Text style={[styles.title, styles.textBold]}>COMBINED INVOICE</Text>
+            <Text style={[styles.title, styles.textBold]}>API INVOICE</Text>
             <Text>{invoice.invoiceNumber}</Text>
             <Text style={styles.dates}>Issue Date: {formatDate(invoice.issueDate)}</Text>
             <Text style={styles.dates}>Due Date: {formatDate(invoice.dueDate)}</Text>

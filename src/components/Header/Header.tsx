@@ -17,13 +17,13 @@ const Header: React.FC<HeaderProps> = ({
           <p className="mt-1 text-sm text-gray-500">{subtitle}</p>
         </div>
         <div className="hidden sm:flex space-x-4">
-          <button className="px-4 py-2 text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors">
+          <button className="px-4 py-2 text-sm font-medium text-gray-600 hover:text-pink-800 transition-colors">
             Dashboard
           </button>
-          <button className="px-4 py-2 text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors">
+          <button className="px-4 py-2 text-sm font-medium text-gray-600 hover:text-emerald-800 transition-colors">
             Templates
           </button>
-          <button className="px-4 py-2 bg-gray-800 text-white rounded-md text-sm font-medium hover:bg-gray-700 transition-colors">
+          <button className="px-4 py-2 bg-gray-800 text-white rounded-md text-sm font-medium hover:bg-gradient-to-r from-rose-500 to-emerald-600 transition-colors">
             New Invoice
           </button>
         </div>

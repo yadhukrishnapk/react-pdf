@@ -83,20 +83,20 @@ export default function CombinedApiInvoice() {
   return (
     <div className="max-w-4xl mx-auto my-10 px-4">
       <div className="bg-white shadow-xl rounded-xl overflow-hidden border border-gray-200">
-        <div className="bg-gradient-to-r from-emerald-800 to-emerald-400 py-4 px-6 text-white">
-          <h2 className="text-xl font-semibold">Combined Invoice Generator</h2>
-          <p className="text-sm text-emerald-100">All invoice items merged into one PDF</p>
+        <div className="bg-gradient-to-r from-rose-900 to-rose-400 py-4 px-6 text-white">
+          <h2 className="text-xl font-semibold">Invoice from api </h2>
+          <p className="text-sm text-rose-100">All invoice items merged into one PDF</p>
         </div>
 
         <div className="bg-gray-50 p-4 border-b border-gray-200">
           <div className="flex items-center justify-between">
             <div>
-              <span className="text-gray-700 font-medium">Combined Invoice:</span>
-              <span className="ml-2 text-emerald-600 font-semibold">{combinedInvoice?.invoiceNumber}</span>
+              <span className="text-gray-700 font-medium">API Invoice:</span>
+              <span className="ml-2 text-rose-600 font-semibold">{combinedInvoice?.invoiceNumber}</span>
             </div>
             <div>
               <span className="text-gray-700">Total Items:</span>
-              <span className="ml-2 text-emerald-600 font-semibold">{combinedInvoice?.items.length || 0}</span>
+              <span className="ml-2 text-rose-600 font-semibold">{combinedInvoice?.items.length || 0}</span>
             </div>
           </div>
         </div>
@@ -119,8 +119,8 @@ export default function CombinedApiInvoice() {
                 {({ loading }) => (
                   <button
                     className={`flex items-center ${
-                      loading || downloadLoading ? 'bg-emerald-500' : 'bg-emerald-600'
-                    } text-white px-6 py-3 rounded-lg hover:bg-emerald-700 transition duration-300 font-medium shadow-md`}
+                      loading || downloadLoading ? 'bg-rose-500' : 'bg-pink-600'
+                    } text-white px-6 py-3 rounded-lg hover:bg-rose-700 transition duration-300 font-medium shadow-md`}
                     disabled={loading}
                     onClick={() => {
                       setDownloadLoading(true);
